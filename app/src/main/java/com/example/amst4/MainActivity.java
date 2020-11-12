@@ -16,18 +16,18 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick(View v) {
         Intent intent;
-//        if(v.getId()==R.id.btnYoutube){
-//             intent = new Intent(this, formulario_registro.class);
-//            startActivity(intent);
-//        }else if(v.getId()==R.id.btnCalendario){
-//             intent = new Intent(this, formulario_registro.class);
-//
-//        }else if (v.getId()==R.id.btnMapa){
-//            intent = new Intent(this, formulario_registro.class);
-//        }else{
-            intent = new Intent(this, GraficoLineal.class);
+        if(v.getId()==R.id.btnYoutube){
+             //intent = new Intent(this, formulario_registro.class);
 
+        }else if(v.getId()==R.id.btnCalendario){
+             //intent = new Intent(this, formulario_registro.class);
 
+        }else if (v.getId()==R.id.btnMapa){
+            //intent = new Intent(this, formulario_registro.class);
+        }else {
+
+        }
+        intent = new Intent(this, GraficoLineal.class);
         startActivity(intent);
     }
 }
