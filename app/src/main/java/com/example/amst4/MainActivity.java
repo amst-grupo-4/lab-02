@@ -17,14 +17,14 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View v) {
         Intent intent;
         if(v.getId()==R.id.btnYoutube){
-             //intent = new Intent(this, formulario_registro.class);
+             intent = new Intent(this, Video_View.class);
 
         }
-        if(v.getId()==R.id.btnCalendario){
-             //intent = new Intent(this, formulario_registro.class);
+        else if(v.getId()==R.id.btnCalendario){
+             intent = new Intent(this, Calendar_View.class);
 
         }
-        if (v.getId()==R.id.btnMapa){
+        else if (v.getId()==R.id.btnMapa){
             intent = new Intent(this, MapsActivity.class);
         }else {
             intent = new Intent(this, GraficoLineal.class);
