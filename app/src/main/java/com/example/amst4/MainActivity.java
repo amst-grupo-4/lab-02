@@ -19,15 +19,18 @@ public class MainActivity extends AppCompatActivity {
         if(v.getId()==R.id.btnYoutube){
              //intent = new Intent(this, formulario_registro.class);
 
-        }else if(v.getId()==R.id.btnCalendario){
+        }
+        if(v.getId()==R.id.btnCalendario){
              //intent = new Intent(this, formulario_registro.class);
 
-        }else if (v.getId()==R.id.btnMapa){
-            //intent = new Intent(this, formulario_registro.class);
+        }
+        if (v.getId()==R.id.btnMapa){
+            intent = new Intent(this, MapsActivity.class);
         }else {
+            intent = new Intent(this, GraficoLineal.class);
 
         }
-        intent = new Intent(this, GraficoLineal.class);
+
         startActivity(intent);
     }
 }
