@@ -24,7 +24,8 @@ public class Video_View extends YouTubeBaseActivity implements YouTubePlayer.OnI
     @Override
     public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean fueRestaurado) {
         if(!fueRestaurado){
-            youTubePlayer.cueVideo("n1lfYh-aUk0&ab_channel=DopeLyrics"); //https://www.youtube.com/watch?v=n1lfYh-aUk0&ab_channel=DopeLyrics
+            youTubePlayer.cueVideo("n1lfYh-aUk0");
+            youTubePlayer.play();
         }
     }
 
